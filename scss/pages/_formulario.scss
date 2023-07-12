@@ -1,0 +1,10 @@
+@import '../utilities/variables';
+
+.form {
+    &__boton-check {
+        width:  $w-90;
+    }
+    &__boton-form {
+        @extend .form__boton-check;
+    }
+}
