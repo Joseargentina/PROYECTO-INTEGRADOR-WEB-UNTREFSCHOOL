@@ -1,0 +1,13 @@
+@import '../utilities/variables';
+
+.header {
+    &__home {
+        font-size: 2rem;
+    }
+}
+
+.collapse {
+    &__navbar {
+        width: $w-90;
+    }
+}

@@ -94,6 +94,19 @@ p {
 /*Fuentes*/
 /*Tamaños*/
 /*anchos*/
+.header__home {
+  font-size: 2rem;
+}
+
+.collapse__navbar {
+  width: 90%;
+}
+
+/*Colores Principales*/
+/*Colores Secundarios*/
+/*Fuentes*/
+/*Tamaños*/
+/*anchos*/
 .form__boton-check, .form__boton-form {
   width: 90%;
 }
