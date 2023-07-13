@@ -1,0 +1,44 @@
+@import '../utilities/variables';
+
+.footer {
+    
+    .redes-sociales {
+
+        &__titulo {
+            text-align: center;
+        }
+
+        &__nav {
+            @include flex(row, space-evenly, center);
+            justify-content: space-evenly;
+        }
+
+        &__facebook, &__twitter {
+            font-size: 3rem;
+        }
+        &__img {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    .ubicacion {
+        &__titulo {
+            @extend .redes-sociales__titulo;
+        }
+        &__iframe {
+            width: 95%;
+            margin: 0 1rem;
+        }
+    }
+
+    .contacto {
+        @include flex(column, center, center);
+        &__titulo {
+            @extend .redes-sociales__titulo;
+        }
+        ;
+    }
+
+
+}

@@ -55,3 +55,10 @@
     margin: 0;
     color: $color;
 }
+
+@mixin bg-img($image, $size ) {
+    background-image: url($image);
+    background-size: $size;
+    background-repeat: no-repeat;
+    background-position: center;
+}

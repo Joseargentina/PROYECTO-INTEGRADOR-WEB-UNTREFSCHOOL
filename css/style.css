@@ -97,11 +97,52 @@ p {
 .header__home {
   font-size: 2rem;
 }
-
-.collapse__navbar {
+.header__hero {
+  background-image: url("../assets/img/instituto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height: 30rem;
+  display: flex;
+  align-items: end;
+}
+.header .collapse__navbar {
   width: 90%;
 }
 
+/*Colores Principales*/
+/*Colores Secundarios*/
+/*Fuentes*/
+/*Tamaños*/
+/*anchos*/
+.footer .redes-sociales__titulo, .footer .contacto__titulo, .footer .ubicacion__titulo {
+  text-align: center;
+}
+.footer .redes-sociales__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .redes-sociales__facebook, .footer .redes-sociales__twitter {
+  font-size: 3rem;
+}
+.footer .redes-sociales__img {
+  width: 3rem;
+  height: 3rem;
+}
+.footer .ubicacion__iframe {
+  width: 95%;
+  margin: 0 1rem;
+}
+.footer .contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /*Colores Principales*/
 /*Colores Secundarios*/
 /*Fuentes*/

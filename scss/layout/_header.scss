@@ -4,10 +4,18 @@
     &__home {
         font-size: 2rem;
     }
-}
+    &__hero {
+        @include bg-img('../assets/img/instituto.jpg', cover);
+        text-align: center;
+        height: 30rem;
+        display: flex;
+        align-items: end;
+    }
 
-.collapse {
-    &__navbar {
-        width: $w-90;
+    .collapse {
+        &__navbar {
+            width: $w-90;
+        }
     }
 }
+
