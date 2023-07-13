@@ -52,6 +52,7 @@ a {
 body {
   font-size: 1.6rem;
   background-color: #EFF5F5;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
 }
 
@@ -94,6 +95,9 @@ p {
 /*Fuentes*/
 /*Tamaños*/
 /*anchos*/
+.header__nav {
+  background-color: #181823 !important;
+}
 .header__home {
   font-size: 2rem;
 }

@@ -1,6 +1,11 @@
 @import '../utilities/variables';
 
 .header {
+
+    &__nav {
+        background-color: $colorCuarto !important;
+    }
+
     &__home {
         font-size: 2rem;
     }
