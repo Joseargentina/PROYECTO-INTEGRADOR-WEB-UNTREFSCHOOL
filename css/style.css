@@ -111,11 +111,16 @@ p {
   text-align: center;
   height: 40rem;
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
 }
 .header__hero h1 {
   font-size: 4rem;
   color: #EFF5F5;
+}
+.header__hero p {
+  font-size: 2rem;
 }
 .header .collapse__navbar {
   width: 90%;
