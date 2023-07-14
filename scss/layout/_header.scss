@@ -6,15 +6,20 @@
         background-color: $colorCuarto !important;
     }
 
-    &__home {
+    &__titulo {
         font-size: 2rem;
     }
     &__hero {
         @include bg-img('../assets/img/instituto.jpg', cover);
+        background-position: 30%;
         text-align: center;
-        height: 30rem;
+        height: 40rem;
         display: flex;
         align-items: end;
+    }
+    &__hero h1 {
+        font-size: 4rem;
+        color: $colorCinco;
     }
 
     .collapse {
