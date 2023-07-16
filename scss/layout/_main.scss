@@ -1,0 +1,16 @@
+@import '../utilities/variables';
+
+.main {
+
+    .porque-elegirnos {
+        &__lista {
+            list-style: disc;
+            padding: 0 2rem;
+        }
+
+        &__li {
+            margin: 1rem 0;
+        }
+    }
+}
+

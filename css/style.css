@@ -131,6 +131,19 @@ p {
 /*Fuentes*/
 /*Tamaños*/
 /*anchos*/
+.main .porque-elegirnos__lista {
+  list-style: disc;
+  padding: 0 2rem;
+}
+.main .porque-elegirnos__li {
+  margin: 1rem 0;
+}
+
+/*Colores Principales*/
+/*Colores Secundarios*/
+/*Fuentes*/
+/*Tamaños*/
+/*anchos*/
 .footer .redes-sociales__titulo, .footer .contacto__titulo, .footer .ubicacion__titulo {
   text-align: center;
 }
