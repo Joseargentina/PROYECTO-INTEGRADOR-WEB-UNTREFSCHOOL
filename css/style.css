@@ -131,15 +131,38 @@ p {
 /*Fuentes*/
 /*Tamaños*/
 /*anchos*/
-.main .porque-elegirnos__lista {
-  list-style: disc;
-  padding: 0 2rem;
+/*Colores Principales*/
+/*Colores Secundarios*/
+/*Fuentes*/
+/*Tamaños*/
+/*anchos*/
+.main .quienes-somos__contenedor {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
 }
-.main .porque-elegirnos__li {
-  margin: 1rem 0;
+.main .quienes-somos__img {
+  height: 100%;
+}
+.main .porque-elegirnos__contenedor {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+.main .propuesta-educativa__propuesta {
+  background-color: #EFF5F5;
 }
 .main .propuesta-educativa__img {
-  height: 20rem;
+  height: 25rem;
+}
+.main .row > * {
+  padding: 0;
+}
+.main .ultimas-noticias__noticia {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: center;
 }
 
 /*Colores Principales*/
@@ -181,6 +204,28 @@ p {
 /*anchos*/
 .form__boton-check, .form__boton-form {
   width: 90%;
+}
+/*Colores Principales*/
+/*Colores Secundarios*/
+/*Fuentes*/
+/*Tamaños*/
+/*anchos*/
+/*Colores Principales*/
+/*Colores Secundarios*/
+/*Fuentes*/
+/*Tamaños*/
+/*anchos*/
+@media (min-width: 768px) {
+  .main .quienes-somos__contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .main .porque-elegirnos__contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

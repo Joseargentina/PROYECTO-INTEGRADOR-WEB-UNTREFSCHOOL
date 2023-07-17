@@ -1,3 +1,19 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
 @include tablet { 
-    
- }
+
+    .main {
+        .quienes-somos {
+            &__contenedor {
+                @include grid(2, 2rem);
+            }
+        }
+        .porque-elegirnos {
+            &__contenedor {
+                @include grid(2, 2rem);
+
+            }
+        }
+    }
+}

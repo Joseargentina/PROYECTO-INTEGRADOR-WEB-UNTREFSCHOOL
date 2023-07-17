@@ -39,8 +39,8 @@
 
 @mixin grid($columnas, $espaciado ) {
     display: grid;
-    gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
 }
 
 @mixin flex ($direction, $justify, $align){

@@ -1,21 +1,38 @@
 @import '../utilities/variables';
+@import '../utilities/mixins';
 
 .main {
 
-    .porque-elegirnos {
-        &__lista {
-            list-style: disc;
-            padding: 0 2rem;
+    .quienes-somos {
+        &__contenedor {
+            @include grid(1, 2rem);
         }
+        &__img {
+            height: 100%;
+        }
+    }
 
-        &__li {
-            margin: 1rem 0;
+    .porque-elegirnos {
+        &__contenedor {
+            @include grid(1, 2rem);
         }
     }
 
     .propuesta-educativa {
+        &__propuesta {
+            background-color: $colorCinco;
+        }
         &__img {
-            height: 20rem;
+            height: 25rem;
+        }
+    }
+    .row > * {
+        padding: 0;
+    }
+
+    .ultimas-noticias {
+        &__noticia {
+            @include flex(column, unset, center);
         }
     }
 }
