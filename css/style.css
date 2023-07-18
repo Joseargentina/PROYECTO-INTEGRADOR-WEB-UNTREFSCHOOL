@@ -109,11 +109,6 @@ p {
 .main .quienes-somos__img {
   height: 100%;
 }
-.main .porque-elegirnos__contenedor {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
-}
 .main .propuesta-educativa__propuesta {
   background-color: #EFF5F5;
 }
@@ -170,6 +165,43 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    grid-template-areas: "grid-1 grid-2";
+  }
+  .main .porque-elegirnos__imagen {
+    grid-column: grid-2;
+    grid-row: grid-2;
+  }
+  .main .porque-elegirnos__texto {
+    grid-column: grid-1;
+    grid-row: grid-1;
+  }
+  .footer__contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    place-items: baseline;
+  }
+  .footer .redes-sociales {
+    padding: 2rem;
+  }
+  .footer .ubicacion {
+    padding: 2rem;
+  }
+  .footer .ubicacion__iframe {
+    padding: 1rem;
+    width: auto;
+    height: auto;
+  }
+  .footer .contacto {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .contacto__nav li {
+    padding: 1rem;
   }
 }
 

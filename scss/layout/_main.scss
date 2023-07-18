@@ -13,9 +13,7 @@
     }
 
     .porque-elegirnos {
-        &__contenedor {
-            @include grid(1, 2rem);
-        }
+        @extend .quienes-somos;
     }
 
     .propuesta-educativa {

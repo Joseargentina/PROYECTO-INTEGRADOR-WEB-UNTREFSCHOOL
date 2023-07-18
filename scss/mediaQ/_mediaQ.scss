@@ -12,7 +12,47 @@
         .porque-elegirnos {
             &__contenedor {
                 @include grid(2, 2rem);
+                grid-template-areas:
+                    "grid-1 grid-2";
+            }
 
+            &__imagen {
+                grid-column: grid-2;
+                grid-row: grid-2;
+            }
+            &__texto {
+                grid-column: grid-1;
+                grid-row: grid-1;
+            }
+        }
+    }
+
+    .footer {
+        &__contenedor {
+            @include flex(row, center, center);
+            place-items: baseline;
+        }
+
+        .redes-sociales {
+            padding: 2rem;
+        }
+
+        .ubicacion {
+            padding: 2rem;
+
+            &__iframe {
+                padding: 1rem;
+                width: auto;
+                height: auto;
+            }
+        }
+
+        .contacto {
+            padding: 2rem;
+            @include flex(column, center, center);
+
+            &__nav li {
+                padding: 1rem;
             }
         }
     }
