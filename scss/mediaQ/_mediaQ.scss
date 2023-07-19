@@ -4,26 +4,36 @@
 @include tablet { 
 
     .main {
-        .quienes-somos {
-            &__contenedor {
-                @include grid(2, 2rem);
-            }
+        //Quienes-Somos
+
+        &__quienes-contenedor {
+            @include grid(2, 2rem);
+            grid-template-rows: 55rem;
         }
-        .porque-elegirnos {
-            &__contenedor {
-                @include grid(2, 2rem);
+        &__quienes-img {
+            height: 100%;
+        }
+
+        //Porque Elegirnos
+
+        &__elegirnos-contenedor {
+            @include grid(2, 2rem);
+            grid-template-rows: 55rem;
                 grid-template-areas:
                     "grid-1 grid-2";
-            }
-
-            &__imagen {
-                grid-column: grid-2;
+        }
+        &__elegirnos-imagen {
+            grid-column: grid-2;
                 grid-row: grid-2;
-            }
-            &__texto {
-                grid-column: grid-1;
-                grid-row: grid-1;
-            }
+        
+        }
+        &__elegirnos-img {
+            height: 100%;
+        }
+
+        &__elegirnos-texto {
+            grid-column: grid-1;
+            grid-row: grid-1;
         }
     }
 

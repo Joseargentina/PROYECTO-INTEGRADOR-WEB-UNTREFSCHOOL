@@ -13,7 +13,7 @@
 
     //porque-elegirnos
 
-    &__porque-elegirnos {
+    &__elegirnos {
         @extend .main__quienes-contenedor;
     }
 
@@ -22,7 +22,7 @@
         background-color: $colorCinco;
     }
 
-    &__img {
+    &__propuesta-img {
         height: 25rem;
     }
 

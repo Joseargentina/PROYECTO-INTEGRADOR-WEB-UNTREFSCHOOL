@@ -11,6 +11,7 @@
     &__lista {
         @include flex(row, space-evenly, center);
         justify-content: space-evenly;
+        margin-top: 1rem;
     }
 
     &__facebook, &__twitter {
@@ -28,7 +29,7 @@
     }
     &__iframe {
         width: 95%;
-        margin: 0 1rem;
+        margin-top: 1rem;
     }
 
     //contacto
@@ -40,6 +41,15 @@
     &__titulo {
             @extend .footer__redes-titulo;
         }
+
+    &__nav {
+        @include flex(column, center, center);
+        padding: 1rem;
+
+        li {
+            margin-top: 1rem;
+        }
+    }
 
 
 }

@@ -101,7 +101,7 @@ p {
   width: 90%;
 }
 
-.main__quienes-contenedor, .main__porque-elegirnos {
+.main__quienes-contenedor, .main__elegirnos {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
@@ -112,7 +112,7 @@ p {
 .main__propuesta {
   background-color: #EFF5F5;
 }
-.main__img {
+.main__propuesta-img {
   height: 25rem;
 }
 .main .row > * {
@@ -134,6 +134,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 1rem;
 }
 .footer__facebook, .footer__twitter {
   font-size: 3rem;
@@ -144,7 +145,7 @@ p {
 }
 .footer__iframe {
   width: 95%;
-  margin: 0 1rem;
+  margin-top: 1rem;
 }
 .footer__contacto {
   display: flex;
@@ -152,26 +153,45 @@ p {
   justify-content: center;
   align-items: center;
 }
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.footer__nav li {
+  margin-top: 1rem;
+}
+
 .form__boton-check, .form__boton-form {
   width: 90%;
 }
 @media (min-width: 768px) {
-  .main .quienes-somos__contenedor {
+  .main__quienes-contenedor, .main__elegirnos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    grid-template-rows: 55rem;
   }
-  .main .porque-elegirnos__contenedor {
+  .main__quienes-img {
+    height: 100%;
+  }
+  .main__elegirnos-contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    grid-template-rows: 55rem;
     grid-template-areas: "grid-1 grid-2";
   }
-  .main .porque-elegirnos__imagen {
+  .main__elegirnos-imagen {
     grid-column: grid-2;
     grid-row: grid-2;
   }
-  .main .porque-elegirnos__texto {
+  .main__elegirnos-img {
+    height: 100%;
+  }
+  .main__elegirnos-texto {
     grid-column: grid-1;
     grid-row: grid-1;
   }
