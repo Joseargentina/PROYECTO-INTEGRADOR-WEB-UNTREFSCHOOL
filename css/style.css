@@ -97,56 +97,56 @@ p {
 .header__hero p {
   font-size: 2rem;
 }
-.header .collapse__navbar {
+.header__navbar {
   width: 90%;
 }
 
-.main .quienes-somos__contenedor {
+.main__quienes-contenedor, .main__porque-elegirnos {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
 }
-.main .quienes-somos__img {
+.main__img {
   height: 100%;
 }
-.main .propuesta-educativa__propuesta {
+.main__propuesta {
   background-color: #EFF5F5;
 }
-.main .propuesta-educativa__img {
+.main__img {
   height: 25rem;
 }
 .main .row > * {
   padding: 0;
 }
-.main .ultimas-noticias__noticia {
+.main__noticia {
   display: flex;
   flex-direction: column;
   justify-content: unset;
   align-items: center;
 }
 
-.footer .redes-sociales__titulo, .footer .contacto__titulo, .footer .ubicacion__titulo {
+.footer__redes-titulo, .footer__titulo, .footer__ubicacion-titulo {
   text-align: center;
 }
-.footer .redes-sociales__nav {
+.footer__lista {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   justify-content: space-evenly;
 }
-.footer .redes-sociales__facebook, .footer .redes-sociales__twitter {
+.footer__facebook, .footer__twitter {
   font-size: 3rem;
 }
-.footer .redes-sociales__img {
+.footer__img {
   width: 3rem;
   height: 3rem;
 }
-.footer .ubicacion__iframe {
+.footer__iframe {
   width: 95%;
   margin: 0 1rem;
 }
-.footer .contacto {
+.footer__contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,29 +178,55 @@ p {
   .footer__contenedor {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    gap: 2rem;
     place-items: baseline;
   }
-  .footer .redes-sociales {
-    padding: 2rem;
-  }
-  .footer .ubicacion {
-    padding: 2rem;
-  }
-  .footer .ubicacion__iframe {
-    padding: 1rem;
-    width: auto;
-    height: auto;
-  }
-  .footer .contacto {
-    padding: 2rem;
+  .footer__redes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .footer .contacto__nav li {
+  .footer__redes h2 {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .footer__redes ul {
+    flex-direction: column;
+  }
+  .footer__facebook, .footer__twitter {
+    font-size: 3rem;
+  }
+  .footer__img {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+  }
+  .footer__nombres {
+    font-size: 2rem;
+  }
+  .footer__enlace {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .footer__iframe {
+    padding: 1rem;
+    width: 20rem;
+    height: 20rem;
+  }
+  .footer__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__nav li {
     padding: 1rem;
   }
 }

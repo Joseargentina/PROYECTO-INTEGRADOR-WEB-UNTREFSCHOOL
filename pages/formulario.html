@@ -45,7 +45,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
-            <ul class="navbar-nav navbar-dark collapse__navbar">
+            <ul class="navbar-nav navbar-dark header__navbar">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="quienes-somos" role="button">Quienes Somos</a>
               </li>
@@ -110,30 +110,33 @@
           </form>
     </main>
     <footer class="footer container">
-      <section class="redes-sociales">
-          <h2 class="redes-sociales__titulo">Redes Sociales</h2>
-          <ul class="redes-sociales__nav">
-            <li><a href="https://www.facebook.com/" class="redes-sociiales__li" target="_blank"><i class="fa-brands fa-square-facebook redes-sociales__facebook" style="color: #4576c9;"></i></a></li>
-            <li><a href="https://www.instagram.com/" class="redes-sociales__li" target="_blank"><img src="../assets/img/instagram.png" class="redes-sociales__img" alt=""></a></li>
-            <li><a href="https://twitter.com/" target="_blank" class="redes-sociales__li"><i class="fa-brands fa-twitter redes-sociales__twitter" style="color: #3464b7;"></i></a></li>
-          </ul>
-      </section>
-      <section class="Ubicacion">
-          <h2 class="ubicacion__titulo">Ubicación</h2>
-          <iframe class="ubicacion__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1041221060786!2d-58.52819710000001!3d-34.6015285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7c0fa8ea61b%3A0xc39ce2c5b55bb74!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20(UNTREF)%20-%20Rectorado!5e0!3m2!1ses-419!2sar!4v1689209307028!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-      <section class="contacto">
-          <h2 class="contacto__titulo">Contacto</h2>
-          <ul class="contacto__nav">
-            <li><a href="mailto:ejemplo@ejemplo.com?subject=Asunto&body=Cuerpo del correo electrónico" target="_blank">EmailInstituto@gmail</a></li>
-            <li><a href="tel:+541155555555" target="_blank">Tel:011-555-56845</a></li>
-            <li><a href="https://wa.me/541155555555" target="_blank">WhatsApp: 011-555-56845</a>
-            </li>
-          </ul>
+      <div class="footer__contenedor">
+        <section class="footer__redes">
+            <h2 class="footer__redes-titulo">Redes Sociales</h2>
+            <ul class="footer__lista">
+              <li><a href="https://www.facebook.com/" class="footer__enlace" target="_blank"><h5 class="footer__nombres">Facebook</h5><i class="fa-brands fa-square-facebook footer__facebook" style="color: #4576c9;"></i></a></li>
+              <li><a href="https://www.instagram.com/" class="footer__enlace" target="_blank"><h5 class="footer__nombres">Instagram</h5><img src="../assets/img/instagram.png" class="footer__img" alt="imagen logo instagram"></a></li>
+              <li><a href="https://twitter.com/" target="_blank" class="footer__enlace"><h5 class="footer__nombres">Twitter</h5><i class="fa-brands fa-twitter footer__twitter" style="color: #3464b7;"></i></a></li>
+            </ul>
+        </section>
+        <section class="footer__ubicacion">
+            <h2 class="footer__ubicacion-titulo">UntrefSchool</h2>
+            <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1041221060786!2d-58.52819710000001!3d-34.6015285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7c0fa8ea61b%3A0xc39ce2c5b55bb74!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20(UNTREF)%20-%20Rectorado!5e0!3m2!1ses-419!2sar!4v1689209307028!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="footer__contacto">
+            <h2 class="footer__titulo-contacto">Contacto</h2>
+            <ul class="footer__nav">
+              <li><a href="mailto:ejemplo@ejemplo.com?subject=Asunto&body=Cuerpo del correo electrónico" target="_blank">EmailInstituto@gmail</a></li>
+              <li><a href="tel:+541155555555" target="_blank">Tel:011-555-56845</a></li>
+              <li><a href="https://wa.me/541155555555" target="_blank">WhatsApp: 011-555-56845</a>
+              </li>
+            </ul>
 
-      </section>
-      <p class="footer__copyright text-center">© 2023 Instituto de educación primaria</p>
-  </footer>
+        </section>
+      </div>
+        
+        <p class="footer__copyright text-center">© 2023 UntrefSchool</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>

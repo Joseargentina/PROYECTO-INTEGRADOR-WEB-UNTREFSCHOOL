@@ -2,36 +2,38 @@
 @import '../utilities/mixins';
 
 .main {
+    //quienes somos
+    &__quienes-contenedor {
+        @include grid(1, 2rem);
+        }
 
-    .quienes-somos {
-        &__contenedor {
-            @include grid(1, 2rem);
-        }
-        &__img {
-            height: 100%;
-        }
+    &__img {
+        height: 100%;
     }
 
-    .porque-elegirnos {
-        @extend .quienes-somos;
+    //porque-elegirnos
+
+    &__porque-elegirnos {
+        @extend .main__quienes-contenedor;
     }
 
-    .propuesta-educativa {
-        &__propuesta {
-            background-color: $colorCinco;
-        }
-        &__img {
-            height: 25rem;
-        }
+    //propuesta educativa
+    &__propuesta {
+        background-color: $colorCinco;
     }
+
+    &__img {
+        height: 25rem;
+    }
+
     .row > * {
         padding: 0;
     }
 
-    .ultimas-noticias {
-        &__noticia {
-            @include flex(column, unset, center);
-        }
+    //ultimas noticias
+
+    &__noticia {
+        @include flex(column, unset, center);
     }
 }
 

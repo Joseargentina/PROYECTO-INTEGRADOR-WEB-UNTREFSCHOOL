@@ -28,32 +28,64 @@
     }
 
     .footer {
+
         &__contenedor {
-            @include flex(row, center, center);
+            @include flex(row, space-around, center);
+            gap: 2rem;
             place-items: baseline;
         }
 
-        .redes-sociales {
-            padding: 2rem;
-        }
+        //redes
 
-        .ubicacion {
-            padding: 2rem;
+        &__redes {
 
-            &__iframe {
-                padding: 1rem;
-                width: auto;
-                height: auto;
+            h2{
+                display: inline-block;
+                white-space: nowrap;
             }
-        }
-
-        .contacto {
-            padding: 2rem;
             @include flex(column, center, center);
-
-            &__nav li {
-                padding: 1rem;
+            ul {
+                flex-direction: column;
             }
+
+        }
+
+        &__facebook, &__twitter {
+            font-size: 3rem;
+        }
+
+        &__img {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+        }
+
+        &__nombres {
+            font-size: 2rem;
+        }
+
+        &__enlace {
+            @include flex(row, center, baseline);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        //ubicacion
+
+        &__iframe {
+            padding: 1rem;
+            width: 20rem;
+            height: 20rem;
+        }
+
+        //contacto
+
+        &__contacto {
+            @include flex(column, center, center);
+        }
+
+        &__nav li {
+            padding: 1rem;
         }
     }
 }
