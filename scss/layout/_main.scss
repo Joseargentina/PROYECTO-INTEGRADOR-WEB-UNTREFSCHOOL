@@ -3,37 +3,85 @@
 
 .main {
     //quienes somos
+    
+    padding: 0 !important;
+    
+    &__quienes-titulo {
+        font-size: 2.8rem;
+        padding: 1rem;
+    }
+
     &__quienes-contenedor {
-        @include grid(1, 2rem);
+        @include grid(1, 0);
         }
 
-    &__img {
+    &__quienes-img {
         height: 100%;
+    }
+
+    &__quienes-texto {
+        text-align: center;
+        padding: 1.3rem;
     }
 
     //porque-elegirnos
 
-    &__elegirnos {
-        @extend .main__quienes-contenedor;
+    &__elegirnos-titulo {
+        font-size: 2.8rem;
+        padding: 1rem;
     }
 
-    //propuesta educativa
+    &__elegirnos-contenedor {
+        @include grid(1, 0);
+    }
+
+    &__elegirnos-texto {
+        @extend .main__quienes-texto;
+    }
+
+    
+    &__elegirnos-img {
+        height: 100%;
+    }
+
+    //propuestas educativa
+
+    &__propuesta-titulo {
+        font-size: 2.8rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
     &__propuesta {
         background-color: $colorCinco;
+        margin-bottom: 2rem;
+    }
+
+    
+
+
+    .row > * {
+        padding: 0;
     }
 
     &__propuesta-img {
         height: 25rem;
     }
 
-    .row > * {
-        padding: 0;
+    //ultimas noticias
+
+    
+    &__noti-titulo {
+        margin-bottom: 1rem;
     }
 
-    //ultimas noticias
+    &__noti-nombre {
+        padding: 1rem;
+    }
 
     &__noticia {
         @include flex(column, unset, center);
+        padding: 0 1rem !important;
     }
 }
 

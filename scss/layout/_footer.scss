@@ -6,21 +6,30 @@
 
     &__redes-titulo {
         text-align: center;
+        padding: 1rem;
+        font-size: 2.6rem;
     }
 
     &__lista {
-        @include flex(row, space-evenly, center);
+        @include flex(row, space-evenly, unset);
         justify-content: space-evenly;
         margin-top: 1rem;
+        text-align: center;
+    }
+
+    &__nombres {
+        font-size: 1.7rem;
     }
 
     &__facebook, &__twitter {
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
     &__img {
-        width: 3rem;
-        height: 3rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        display: inline-flex;
     }
+    
 
     //ubicacion
 
@@ -36,6 +45,7 @@
 
     &__contacto {
         @include flex(column, center, center);
+        margin-top: 1rem;
     }
 
     &__titulo {
@@ -44,7 +54,6 @@
 
     &__nav {
         @include flex(column, center, center);
-        padding: 1rem;
 
         li {
             margin-top: 1rem;

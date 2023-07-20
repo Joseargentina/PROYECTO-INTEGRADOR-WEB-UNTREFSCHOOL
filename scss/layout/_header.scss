@@ -2,28 +2,51 @@
 
 .header {
 
-    &__nav {
-        background-color: $colorCuarto !important;
+    &__boton {
+        position: relative !important;
+        right: 1rem !important;
     }
 
     &__titulo {
-        font-size: 2rem;
-    }
-    &__hero {
-        @include bg-img('../assets/img/instituto.jpg', cover);
-        background-position: 30%;
-        text-align: center;
-        height: 40rem;
-        @include flex(column, end, center);
-    }
-    &__hero h1 {
-        font-size: 4rem;
-        color: $colorCinco;
+        font-size: 2.6rem;
     }
 
-    &__hero p {
-        font-size: 2rem;
+    &__nav {
+        background-color: $colorCuarto !important;
     }
+    &__navbar {
+        .nav-item {
+            margin-bottom: 1rem;
+        }
+
+        .nav-item:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+    &__hero {
+        @include bg-img('../assets/img/instituto.jpg', cover);
+        background-position: 25%;
+        text-align: center;
+        height: 35rem;
+        @include flex(column, end, center);
+
+        h1 {
+            font-size: 4rem;
+            color: $colorCinco;
+            
+            
+        }
+
+        p {
+            font-size: 2.4rem;
+            text-shadow: 2px 2px 5px $colorCinco;
+            font-weight: $fontNormal;
+            margin-bottom: 0;
+        }
+    }
+
     
     &__navbar {
             width: $w-90;

@@ -42,7 +42,7 @@
         <nav class="header__nav navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
             <div class="container-fluid flex-wrap flex-lg-nowrap justify-content-between align-items-center">
               <a class="navbar-brand mx-auto header__titulo" href="#">UntrefSchool</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler header__boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
@@ -78,8 +78,8 @@
     </header>
     <main class="main container">
         <!--Seccion Quienes Somos-->
-        <section id="quienes-somos" class="main__quienes container">
-            <h2>Quienes Somos</h2>
+        <section id="quienes-somos" class="main__quienes  mt-3 ">
+            <h2 class="text-center main__quienes-titulo">Quienes Somos</h2>
             <div class="main__quienes-contenedor">
               <div class="main__quienes-imagen">
                 <img src="./assets/img/estudiantes.jpg" class="img-fluid main__quienes-img" alt="imagen estudiantes">
@@ -93,9 +93,9 @@
         </section>
 
         <!--Seccion Porque elegirnos-->
-        <section id="porque-elegirnos" class="main__elegir container">
+        <section id="porque-elegirnos" class="main__elegirnos  mt-3">
           
-            <h2>Porque Elegirnos</h2>
+            <h2 class="text-center main__elegirnos-titulo">Porque Elegirnos</h2>
             <div class="main__elegirnos-contenedor">
               <div class="main__elegirnos-imagen">
                 <img src="./assets/img/aricmetica.jpg" class="img-fluid main__elegirnos-img" alt="estudiante aprendiendo aricmetica">
@@ -111,12 +111,12 @@
 
         <!--Seccion Propuestas Educativas-->
 
-        <section id="propuesta-educativa" class="main__propuestas text-center container">
-            <h2>Propuesta Educativa</h2>
+        <section id="propuesta-educativa" class="main__propuestas text-center">
+            <h2 class="text-center main__propuesta-titulo">Propuesta Educativa</h2>
             <!--Propuestas-->
-            <div class="propuesta-educativa__contenedor row">
+            <div class="main__propuestas-contenedor row">
             
-              <div class="main__propuesta card col-sm-12 col-md-6 col-lg-3">
+              <div class="main__propuesta card col-sm-12 col-md-6 col-lg-3 border-0">
                 <img src="./assets/img/proyectos-escolares2.jpg" class="card-img-top main__propuesta-img" alt="estudiantes aprendiendo">
                 <div class="card-body">
                   <h3 class="card-title">Proyectos escolares</h3>
@@ -124,7 +124,7 @@
                 </div>
                 
               </div>
-              <div class="main__propuesta card col-sm-12 col-md-6 col-lg-3">
+              <div class="main__propuesta card col-sm-12 col-md-6 col-lg-3 border-0">
                 <img src="./assets/img/igualdad.jpg" class="card-img-top main__propuesta-img" alt="estudiantes aprendiendo igualdad">
                 <div class="card-body">
                   <h3 class="card-title">Educar en igualdad</h3>
@@ -132,7 +132,7 @@
                 </div>
                 
               </div>
-              <div class="main__propuesta card col-sm-12 col-md-6 col-lg-3">
+              <div class="main__propuesta card col-sm-12 col-md-6 col-lg-3 border-0">
                 <img src="./assets/img/programacion.jpg" class="card-img-top main__propuesta-img" alt="estudiante aprendiendo programacion">
                 <div class="card-body">
                   <h3 class="card-title">Programación</h3>
@@ -140,7 +140,7 @@
                 </div>
                 
               </div>
-              <div class="main__propuesta card col-sm-12 col-md-6 col-lg-3">
+              <div class="main__propuesta card col-sm-12 col-md-6 col-lg-3 border-0">
                 <img src="./assets/img/evaluacion.jpg" class="card-img-top main__propuesta-img" alt="evaluacion">
                 <div class="card-body">
                   <h3 class="card-title">Evaluación</h3>
@@ -157,15 +157,15 @@
 
         <!--Seccion Ultimas Noticias-->
 
-        <section id="ultimas-noticias" class="main__not contenedor">
-            <h2 class="text-center">Ultimas Noticias</h2>
+        <section id="ultimas-noticias" class="main__noti conteiner">
+            <h2 class="text-center main__noti-titulo">Ultimas Noticias</h2>
             <div class="row">
               <div class="main__noticia text-center col-sm-12 col-md-6">
-              <h3 class="text-center">Eventos y Actividades</h3>
+              <h3 class="text-center main__noti-nombre">Eventos y Actividades</h3>
               <p>Manténgase al día con los últimos eventos y actividades organizados por nuestro instituto. Desde ferias de ciencias hasta competencias deportivas y presentaciones artísticas, hay algo para todos. ¡No se pierda la oportunidad de participar y apoyar a nuestros estudiantes en sus logros!</p>
             </div>
             <div class="main__noticia text-center col-sm-12 col-md-6">
-              <h3 class="text-center">Logros y Reconocimientos</h3>
+              <h3 class="text-center main__noti-nombre">Logros y Reconocimientos</h3>
               <p>Estamos orgullosos de los logros y reconocimientos obtenidos por nuestro instituto y nuestros estudiantes. Desde premios en competencias académicas hasta proyectos destacados, nuestros estudiantes están constantemente superándose a sí mismos y demostrando su excelencia. ¡Únase a nosotros para celebrar sus logros!</p>
             </div>
             </div>

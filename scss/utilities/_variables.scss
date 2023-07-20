@@ -1,7 +1,7 @@
 //Colores Principales
-$colorPrimario: #FC7300;
-$colorSecundario: #1F8A70;
-$colorTerciario: #00425A;
+$colorUno: #FC7300;
+$colorDos: #1F8A70;
+$colorTres: #00425A;
 $colorCuarto: #181823;
 $colorCinco: #EFF5F5;
 
@@ -22,3 +22,19 @@ $desktop: 1440px;
 //anchos
 
 $w-90: 90%;
+
+//margin-top
+
+$m-t: 2rem;
+
+//fonts-weight
+
+$fontNormal: 400;
+$fontMedia: 600;
+$fontGrande: 700;
+$fontExtra: 800;
+
+//Shadows
+
+$textShadow: 2px 2px 5px $colorCinco;
+$boxShadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
