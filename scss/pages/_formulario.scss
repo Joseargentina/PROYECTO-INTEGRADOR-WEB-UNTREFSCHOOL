@@ -1,10 +1,14 @@
 @import '../utilities/variables';
 
 .form {
+    padding: 2rem;
+    margin: 0 auto;
+
     &__boton-check {
         width:  $w-90;
+        margin: 0 0 2rem 3rem !important;
     }
     &__boton-form {
-        @extend .form__boton-check;
+        width: $w-90;
     }
 }

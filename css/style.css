@@ -116,9 +116,6 @@ p {
   width: 90%;
 }
 
-.main {
-  padding: 0 !important;
-}
 .main__quienes-titulo {
   font-size: 2.8rem;
   padding: 1rem;
@@ -156,6 +153,9 @@ p {
   background-color: #EFF5F5;
   margin-bottom: 2rem;
 }
+.main .card-text {
+  padding: 0 1.7rem;
+}
 .main .row > * {
   padding: 0;
 }
@@ -173,7 +173,7 @@ p {
   flex-direction: column;
   justify-content: unset;
   align-items: center;
-  padding: 0 1rem !important;
+  padding: 0 2rem !important;
 }
 
 .footer__redes-titulo, .footer__titulo, .footer__ubicacion-titulo {
@@ -222,9 +222,18 @@ p {
   margin-top: 1rem;
 }
 
-.form__boton-check, .form__boton-form {
+.form {
+  padding: 2rem;
+  margin: 0 auto;
+}
+.form__boton-check {
+  width: 90%;
+  margin: 0 0 2rem 3rem !important;
+}
+.form__boton-form {
   width: 90%;
 }
+
 @media (min-width: 768px) {
   .main__quienes-contenedor {
     display: grid;

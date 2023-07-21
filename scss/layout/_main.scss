@@ -4,7 +4,6 @@
 .main {
     //quienes somos
     
-    padding: 0 !important;
     
     &__quienes-titulo {
         font-size: 2.8rem;
@@ -13,7 +12,7 @@
 
     &__quienes-contenedor {
         @include grid(1, 0);
-        }
+    }
 
     &__quienes-img {
         height: 100%;
@@ -57,7 +56,9 @@
         margin-bottom: 2rem;
     }
 
-    
+    .card-text {
+        padding: 0 1.7rem;
+    }
 
 
     .row > * {
@@ -81,7 +82,7 @@
 
     &__noticia {
         @include flex(column, unset, center);
-        padding: 0 1rem !important;
+        padding: 0 2rem !important;
     }
 }
 
