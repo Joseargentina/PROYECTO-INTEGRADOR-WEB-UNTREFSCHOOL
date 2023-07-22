@@ -1,14 +1,54 @@
 @import '../utilities/variables';
 
-.form {
-    padding: 2rem;
-    margin: 0 auto;
+.formulario {
+
+    background-color: $colorTres;
+    
+
+    &__titulo {
+        white-space: nowrap;
+        font-size: 2.3rem;
+        margin: 1rem auto;
+        text-align: center;
+        color: $colorCinco;
+    }
+
+    &__subtitulo {
+        text-align: center;
+        color: $colorCuatro;
+    }
+
+    &__form {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    &__label {
+        color: $colorCuatro;
+    }
+
+    .form-text {
+        color: $colorCuatro;
+    }
 
     &__boton-check {
         width:  $w-90;
         margin: 0 0 2rem 3rem !important;
     }
     &__boton-form {
-        width: $w-90;
+        width: 40%;
+        padding: 0.5rem;
+        font-size: 1.4rem;
+        font-family: $fuentePrincipal;
+        box-shadow: $boxShadow;
     }
+    
+    .form-control {
+        font-size: 1.4rem;
+    }
+
+    padding: 0 !important;
+    
+
+    
 }

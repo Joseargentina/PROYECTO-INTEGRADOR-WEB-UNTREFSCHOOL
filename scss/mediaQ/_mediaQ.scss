@@ -39,9 +39,12 @@
 
     .footer {
 
+        width: 90%;
+        margin: 1.5rem auto 0 auto;
+
         &__contenedor {
-            @include flex(row, space-around, center);
-            place-items: baseline;
+            @include grid(3, 0);
+            align-items: baseline;
         }
 
         //redes
@@ -57,6 +60,10 @@
                 flex-direction: column;
             }
 
+        }
+
+        &__redes-titulo {
+            margin: 1rem auto 0 auto;
         }
 
         &__facebook, &__twitter {
@@ -99,25 +106,72 @@
         //ubicacion
 
         &__iframe {
-            padding: 1rem;
-            width: 26rem;
+            width: 23rem;
             height: 21rem;
+            margin-top: 2rem;
+        }
+
+        &__ubicacion-titulo {
+            margin: 1rem auto 0 auto;
         }
 
         //contacto
 
         &__contacto {
             @include flex(column, center, center);
+            text-align: center;
+        }
+
+        &__contacto-titulo {
+            margin: 1rem auto 0 auto;
         }
 
         &__nav {
             align-items: unset;
+            margin-top: 1rem;
         }
 
         &__nav li {
             padding: 1rem;
         }
     }
+
+    //Formulario
+
+    .formulario {
+        width: 90%;
+        margin-top: 3rem;
+        border-radius: 5px;
+
+
+        &__titulo {
+            text-align: center;
+            margin: 0 auto 1rem auto;
+        }
+
+        &__subtitulo {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        &__form {
+            padding: 3rem;
+        }
+
+        &__boton-check {
+            margin-top: 1rem !important;
+            @include flex(row, center, center);
+            gap: 1rem;
+        }
+
+        &__boton-form {
+            font-size: 2rem;
+            padding: 1rem;
+        }
+
+        
+    }
+
 }
 
 @include desktop {

@@ -62,6 +62,10 @@ h3 {
   font-family: "Belanosima", sans-serif;
 }
 
+a {
+  font-family: "Belanosima", sans-serif;
+}
+
 [class$=heading] {
   margin: 2rem 0;
 }
@@ -113,7 +117,7 @@ p {
   margin-bottom: 0;
 }
 .header__navbar {
-  width: 90%;
+  width: 95%;
 }
 
 .main__quienes-titulo, .main__propuesta-titulo, .main__elegirnos-titulo {
@@ -168,17 +172,20 @@ p {
   padding: 0 2rem !important;
 }
 
+.footer__redes, .footer__contacto, .footer__ubicacion {
+  margin-bottom: 1rem;
+}
 .footer__redes-titulo, .footer__titulo, .footer__contacto-titulo, .footer__ubicacion-titulo {
   text-align: center;
   padding: 1rem;
   font-size: 2.6rem;
+  margin: 1rem auto;
 }
 .footer__lista {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: unset;
-  justify-content: space-evenly;
   margin-top: 1rem;
   text-align: center;
   flex-basis: 0;
@@ -195,15 +202,18 @@ p {
   display: inline-flex;
 }
 .footer__iframe {
-  width: 95%;
-  margin-top: 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer__contacto-titulo {
+  margin: 0 auto;
+  padding-bottom: 0;
 }
 .footer__contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
 }
 .footer__nav {
   display: flex;
@@ -216,18 +226,51 @@ p {
 }
 .footer__nav a {
   font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+}
+.footer__copyright {
+  font-family: "Belanosima", sans-serif;
+  font-size: 1.8rem;
 }
 
-.form {
-  padding: 2rem;
+.formulario {
+  background-color: #00425A;
+  padding: 0 !important;
+}
+.formulario__titulo {
+  white-space: nowrap;
+  font-size: 2.3rem;
+  margin: 1rem auto;
+  text-align: center;
+  color: #EFF5F5;
+}
+.formulario__subtitulo {
+  text-align: center;
+  color: #181823;
+}
+.formulario__form {
+  padding: 1rem;
   margin: 0 auto;
 }
-.form__boton-check {
+.formulario__label {
+  color: #181823;
+}
+.formulario .form-text {
+  color: #181823;
+}
+.formulario__boton-check {
   width: 90%;
   margin: 0 0 2rem 3rem !important;
 }
-.form__boton-form {
-  width: 90%;
+.formulario__boton-form {
+  width: 40%;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.formulario .form-control {
+  font-size: 1.4rem;
 }
 
 @media (min-width: 768px) {
@@ -258,25 +301,31 @@ p {
     grid-column: grid-1;
     grid-row: grid-1;
   }
-  .footer__contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    place-items: baseline;
+  .footer {
+    width: 90%;
+    margin: 1.5rem auto 0 auto;
   }
-  .footer__redes {
+  .footer__contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    align-items: baseline;
+  }
+  .footer__redes, .footer__ubicacion, .footer__contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .footer__redes h2 {
+  .footer__redes h2, .footer__ubicacion h2, .footer__contacto h2 {
     display: inline-block;
     white-space: nowrap;
   }
-  .footer__redes ul {
+  .footer__redes ul, .footer__ubicacion ul, .footer__contacto ul {
     flex-direction: column;
+  }
+  .footer__redes-titulo, .footer__ubicacion-titulo, .footer__contacto-titulo, .footer__titulo {
+    margin: 1rem auto 0 auto;
   }
   .footer__facebook, .footer__twitter {
     font-size: 3rem;
@@ -317,20 +366,56 @@ p {
     gap: 2rem;
   }
   .footer__iframe {
-    padding: 1rem;
-    width: 26rem;
+    width: 23rem;
     height: 21rem;
+    margin-top: 2rem;
+  }
+  .footer__ubicacion-titulo {
+    margin: 1rem auto 0 auto;
   }
   .footer__contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+  }
+  .footer__contacto-titulo {
+    margin: 1rem auto 0 auto;
   }
   .footer__nav {
     align-items: unset;
+    margin-top: 1rem;
   }
   .footer__nav li {
+    padding: 1rem;
+  }
+  .formulario {
+    width: 90%;
+    margin-top: 3rem;
+    border-radius: 5px;
+  }
+  .formulario__titulo {
+    text-align: center;
+    margin: 0 auto 1rem auto;
+  }
+  .formulario__subtitulo {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .formulario__form {
+    padding: 3rem;
+  }
+  .formulario__boton-check {
+    margin-top: 1rem !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .formulario__boton-form {
+    font-size: 2rem;
     padding: 1rem;
   }
 }

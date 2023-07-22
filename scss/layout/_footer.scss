@@ -4,15 +4,19 @@
     
     //redes
 
+    &__redes {
+        margin-bottom: 1rem;
+    }
+
     &__redes-titulo {
         text-align: center;
         padding: 1rem;
         font-size: 2.6rem;
+        margin: 1rem auto;
     }
 
     &__lista {
         @include flex(row, space-evenly, unset);
-        justify-content: space-evenly;
         margin-top: 1rem;
         text-align: center;
         flex-basis: 0;
@@ -34,23 +38,32 @@
 
     //ubicacion
 
+    &__ubicacion {
+        @extend .footer__redes;
+    }
+
     &__ubicacion-titulo {
         @extend .footer__redes-titulo;
     }
     &__iframe {
-        width: 95%;
-        margin-top: 1rem;
+        width: 100%;
+        margin: 0 auto;
     }
 
     //contacto
 
+    &__contacto {
+        @extend .footer__redes;
+    }
+
     &__contacto-titulo {
         @extend .footer__redes-titulo;
+        margin: 0 auto;
+        padding-bottom: 0;
     }
 
     &__contacto {
         @include flex(column, center, center);
-        margin-top: 1rem;
     }
 
     &__titulo {
@@ -59,6 +72,7 @@
 
     &__nav {
         @include flex(column, center, center);
+        
 
         li {
             margin-top: 1rem;
@@ -66,7 +80,13 @@
 
         a {
             font-size: 1.8rem;
+            font-family:  $fuentePrincipal;
         }
+    }
+
+    &__copyright {
+        font-family: $fuenteSecundaria;
+        font-size: 1.8rem;
     }
 
 
