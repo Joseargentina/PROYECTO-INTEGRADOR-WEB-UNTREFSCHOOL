@@ -41,7 +41,6 @@
 
         &__contenedor {
             @include flex(row, space-around, center);
-            gap: 2rem;
             place-items: baseline;
         }
 
@@ -74,24 +73,45 @@
             font-size: 2rem;
         }
 
+        &__lista {
+
+            li {
+                flex-basis: 7rem;
+                @include flex(row, end, center);
+            } 
+        }
+        &__li--twitter {
+            @include flex(row, end, center);
+        }
+
+
         &__enlace {
             @include flex(row, center, baseline);
             gap: 1rem;
-            margin-top: 2rem;
         }
+
+        &__enlace--twitter {
+            @include flex(row, end, center);
+            gap: 2rem;
+        }
+        
 
         //ubicacion
 
         &__iframe {
             padding: 1rem;
-            width: 20rem;
-            height: 20rem;
+            width: 26rem;
+            height: 21rem;
         }
 
         //contacto
 
         &__contacto {
             @include flex(column, center, center);
+        }
+
+        &__nav {
+            align-items: unset;
         }
 
         &__nav li {
