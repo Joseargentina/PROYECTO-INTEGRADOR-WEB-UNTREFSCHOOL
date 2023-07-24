@@ -3,24 +3,48 @@
 
 @include tablet { 
 
+    .header {
+
+        &__titulo {
+            font-size: 2.9rem;
+        }
+
+        &__navbar {
+            width: 95%;
+
+            .nav-item {
+                font-size: 2rem;
+            }
+        }
+
+        
+    }
+
     .main {
         //Quienes-Somos
 
         &__quienes-contenedor {
             @include grid(2, 2rem);
-            grid-template-rows: 55rem;
+            grid-template-rows: 40rem;
+            margin-bottom: 3rem;
         }
         &__quienes-img {
             height: 100%;
+        }
+
+        &__quienes-texto {
+            overflow: hidden;
+            padding: 0;
         }
 
         //Porque Elegirnos
 
         &__elegirnos-contenedor {
             @include grid(2, 2rem);
-            grid-template-rows: 55rem;
-                grid-template-areas:
-                    "grid-1 grid-2";
+            grid-template-rows: 40rem;
+            grid-template-areas: "grid-1 grid-2";
+            margin-bottom: 3rem;
+            
         }
         &__elegirnos-imagen {
             grid-column: grid-2;
@@ -34,22 +58,40 @@
         &__elegirnos-texto {
             grid-column: grid-1;
             grid-row: grid-1;
+            overflow: hidden
+        }
+
+        //Propuesta Educativa
+
+        &__propuestas-contenedor {
+            @include grid(2, 2rem);
+            margin-bottom: 3rem;
+        }
+        &__propuesta {
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .card {
+            border: 1px solid #ccc !important;
         }
     }
 
     .footer {
 
-        width: 90%;
+        max-width: 90%;
         margin: 1.5rem auto 0 auto;
 
         &__contenedor {
-            @include grid(3, 0);
+            @include grid(3, 1rem);
             align-items: baseline;
+            grid-template-rows: 30rem;
         }
 
         //redes
 
         &__redes {
+
+            height: 100%;
 
             h2{
                 display: inline-block;
@@ -105,8 +147,12 @@
 
         //ubicacion
 
+        &__ubicacion {
+            height: 100%;
+        }
+
         &__iframe {
-            width: 23rem;
+            width: 22rem;
             height: 21rem;
             margin-top: 2rem;
         }
@@ -120,6 +166,7 @@
         &__contacto {
             @include flex(column, center, center);
             text-align: center;
+            height: 100%;
         }
 
         &__contacto-titulo {
@@ -134,28 +181,57 @@
         &__nav li {
             padding: 1rem;
         }
+
+        //copyright
+
+        &__copyright {
+            margin-top: 2rem;
+            font-size: 2.2rem;
+        }
     }
 
     //Formulario
 
     .formulario {
-        width: 90%;
-        margin-top: 3rem;
+        max-width: 90%;
+        margin: 5rem auto 3rem auto;
         border-radius: 5px;
+        background-color: $colorTres;
+        
+        &__contenido {
+            width: 75%;
+            max-width: 90%;
+            margin: 0 auto;
+        }
 
 
         &__titulo {
             text-align: center;
-            margin: 0 auto 1rem auto;
+            margin: 2rem auto;
+            font-size: 2.8rem;
+            color: $colorCinco;
         }
 
         &__subtitulo {
             text-align: center;
             margin: 0 auto;
+            color: $colorUno;
         }
 
         &__form {
             padding: 3rem;
+        }
+
+        &__label {
+            color: $colorCinco;
+        }
+
+        &__label--mod {
+            font-size: 1.6rem;
+        }
+
+        &__texto {
+            color: $colorCinco;
         }
 
         &__boton-check {
@@ -167,6 +243,7 @@
         &__boton-form {
             font-size: 2rem;
             padding: 1rem;
+            margin-top: 1rem;
         }
 
         

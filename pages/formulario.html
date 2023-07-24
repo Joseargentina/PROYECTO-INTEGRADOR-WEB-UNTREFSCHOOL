@@ -51,9 +51,9 @@
 
     <!--Nav-bar-->
 
-    <nav class="header__nav navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+    <nav class="header__nav navbar navbar-expand-xl bg-body-tertiary fixed-top" data-bs-theme="dark">
 
-      <div class="container-fluid flex-wrap flex-lg-nowrap justify-content-between align-items-center">
+      <div class="container-fluid flex-wrap justify-content-between align-items-center">
 
         <a class="navbar-brand mx-auto header__titulo" href="../index.html">UntrefSchool</a>
 
@@ -100,40 +100,42 @@
     </div>
 
   </header>
-  <main class="main container contenedor-formulario formulario" id="formulario">
+  <main class="main container formulario " id="formulario">
+
+    <h1 class="formulario__titulo col-12">Formulario de Contacto</h1>
+
+      <h4 class=" col-12 formulario__subtitulo">Escribenos y en breve nos pondremos en contacto contigo</h4>
 
     <!--Formulario-->
 
-    <form action="https://formsubmit.co/josebarone87@hotmail.com" method="POST" class="row form formulario__form">
+    <form action="https://formsubmit.co/josebarone87@hotmail.com" method="POST" class="row form formulario__form ">
 
-      <h1 class="formulario__titulo col-12">Formulario de Contacto</h1>
+      
 
-      <h4 class="mb-3 col-12 formulario__subtitulo">Escribenos y en breve nos pondremos en contacto contigo</h4>
-
-      <div class="mb-3 col-12">
+      <div class="mb-3 col-12 formulario__contenido">
         <label for="name" class="form-label formulario__label">Nombre Completo</label>
         <input type="name" name="name" id="name" placeholder="Nombre" class="form-control" required>
       </div>
 
-      <div class="mb-3 col-12">
+      <div class="mb-3 col-12 formulario__contenido">
         <label for="exampleInputPassword1" class="form-label formulario__label">Fecha de nacimiento</label>
         <input type="date" namme="date" class="form-control" id="exampleInputPassword1">
       </div>
 
-      <div class="mb-3 col-12">
+      <div class="col-12 formulario__correo formulario__contenido">
         <label for="exampleInputEmail1" class="form-label formulario__label">Correo eleltrónico</label>
         <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"
           placeholder="E-mail" required>
-        <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie.</div>
+        <div id="emailHelp" class="form-text formulario__texto">Nunca compartiremos tu correo electrónico con nadie.</div>
       </div>
 
-      <div class="mb-3 col-12">
+      <div class="mb-3 col-12 formulario__contenido">
         <label for="telefono" class="form-label formulario__label">Telefono</label>
         <input type="tel" name="tel" id="telefono" pattern="[0-9]{5}-[0-9]{6}" placeholder="12345-67890"
           class="form-control" required>
       </div>
 
-      <div class="mb-3 col-12">
+      <div class="mb-3 col-12 formulario__contenido">
         <label for="floatingTextarea2" class="form-label formulario__label">Mensaje</label>
         <textarea class="form-control" name="textarea" placeholder="Dejanos un comentario" id="floatingTextarea2"
           style="height: 100px"></textarea>
@@ -142,7 +144,7 @@
 
       <div class="mb-3 form-check col-12 mx-auto formulario__boton-check">
         <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label formulario__label" for="exampleCheck1">He leido y acepto las condiciones</label>
+        <label class="form-check-label formulario__label formulario__label--mod" for="exampleCheck1">He leido y acepto las condiciones</label>
       </div>
 
       <button type="submit" name="submit" class="btn btn-primary col-12 mx-auto formulario__boton-form">Enviar</button>
@@ -150,7 +152,7 @@
     </form>
   </main>
 
-  <footer class="footer">
+  <footer class="footer container">
 
     <div class="footer__contenedor">
 
@@ -177,11 +179,8 @@
       <section class="footer__ubicacion">
 
         <h2 class="footer__ubicacion-titulo">UntrefSchool</h2>
-
-        <iframe class="footer__iframe"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1041221060786!2d-58.52819710000001!3d-34.6015285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7c0fa8ea61b%3A0xc39ce2c5b55bb74!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20(UNTREF)%20-%20Rectorado!5e0!3m2!1ses-419!2sar!4v1689209307028!5m2!1ses-419!2sar"
-          width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <iframe class="footer__iframe row" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1041221060786!2d-58.52819710000001!3d-34.6015285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7c0fa8ea61b%3A0xc39ce2c5b55bb74!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20(UNTREF)%20-%20Rectorado!5e0!3m2!1ses-419!2sar!4v1689209307028!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
 
       <section class="footer__contacto">
