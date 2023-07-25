@@ -6,11 +6,11 @@
     .header {
 
         &__titulo {
-            font-size: 2.9rem;
+            font-size: 3rem;
         }
 
         &__navbar {
-            width: 95%;
+            right: 1.5rem;
 
             .nav-item {
                 font-size: 2rem;
@@ -214,7 +214,7 @@
 
         &__subtitulo {
             text-align: center;
-            margin: 0 auto;
+            margin: 0 auto 2rem auto;
             color: $colorUno;
         }
 
@@ -252,5 +252,78 @@
 }
 
 @include desktop {
-    
+    //header
+
+    .header {
+
+        //Nav
+
+        &__titulo {
+            font-size: 3.5rem;
+            padding: 0.5rem 0 0.5rem 1rem;
+        }
+
+        &__navbar {
+
+            position: inherit;
+            
+
+            .nav-item {
+                margin-bottom: 0;
+            }
+        }
+
+        .nav-link {
+            font-size: 2.4rem;
+            
+        }
+
+        //Hero
+
+        &__hero {
+            height: 45rem;
+            background-size: 100% 188%;
+            background-position: 0 47%;
+            h1 {
+                font-size: 6rem;
+            }
+
+            p {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    //Main
+
+    .main {
+
+        //Seccion Quienes
+
+        &__quienes-titulo {
+            font-size: 4rem;
+        }
+
+
+        //Seccion Porque elegirnos
+
+
+        //Seccion Propuestas
+
+
+        //Ultimas Noticias
+
+        
+    }
+
+    //Footer
+
+    .footer {
+
+        //Seccion Redes
+
+        //Seccion Ubicacion
+
+        //Seccion Contacto
+    }
 }

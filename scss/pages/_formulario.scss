@@ -1,16 +1,12 @@
 @import '../utilities/variables';
 
 .formulario {
-
+    
     background-color: $colorCinco;
     padding: 1rem !important;
 
-    .mb-3 {
-        margin-bottom: 2rem !important;
-    }
 
     &__titulo {
-        white-space: nowrap;
         font-size: 2.3rem;
         margin: 1rem auto;
         text-align: center;
@@ -23,6 +19,7 @@
         margin: 1rem auto 2rem auto;
         width: 93%;
     }
+    
 
     &__form {
         padding: 1rem;
@@ -38,7 +35,6 @@
     }
 
     &__label--mod {
-        white-space: nowrap;
         font-size: 1.3rem;
     }
 
@@ -50,6 +46,8 @@
         width:  $w-90;
         margin: 0 0 2rem 3rem !important;
     }
+    
+    
     &__boton-form {
         width: 40%;
         padding: 0.4rem !important;

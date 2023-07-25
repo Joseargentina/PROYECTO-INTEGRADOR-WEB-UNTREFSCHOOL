@@ -16,7 +16,8 @@
     }
     &__navbar {
 
-        width: 92%;
+        position: relative;
+        right: 1.5rem;
 
         .nav-item {
             margin-bottom: 1rem;
@@ -25,6 +26,11 @@
         .nav-item:last-child {
             margin-bottom: 0;
         }
+    }
+
+    .nav-link {
+        color: $colorCinco;
+        font-weight: $fontNormal;
     }
 
 
