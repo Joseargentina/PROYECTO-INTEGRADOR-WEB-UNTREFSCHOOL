@@ -4,6 +4,7 @@
     
     background-color: $colorCinco;
     padding: 1rem !important;
+    max-width: 100%;
 
 
     &__titulo {
@@ -19,7 +20,7 @@
         margin: 1rem auto 2rem auto;
         width: 93%;
     }
-    
+
 
     &__form {
         padding: 1rem;
@@ -50,10 +51,17 @@
     
     &__boton-form {
         width: 40%;
+        max-width: 60%;
         padding: 0.4rem !important;
         font-size: 1.4rem;
+        font-weight: $fontMedia;
         font-family: $fuentePrincipal;
         box-shadow: $boxShadow;
+        margin: 2rem auto;
+        color: $colorCinco;
+    }
+    &__boton-form:hover {
+        color: $colorCuatro;
     }
     
     .form-control {

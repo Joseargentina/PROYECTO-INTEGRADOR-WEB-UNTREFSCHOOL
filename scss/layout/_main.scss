@@ -2,6 +2,7 @@
 @import '../utilities/mixins';
 
 .main {
+
     //quienes somos
     
     
@@ -9,6 +10,11 @@
         margin-bottom: 1rem;
         font-size: 2.8rem;
         padding: 1rem !important;
+    }
+
+    &__quienes-texto p {
+        font-size: 1.7rem;
+        padding: 0 1.7rem;
     }
 
     &__quienes-contenedor {
@@ -34,15 +40,14 @@
         @extend .main__quienes-titulo;
     }
 
-    &__elegirnos-contenedor {
-        @include grid(1, 0);
-    }
-
     &__elegirnos-texto {
         @extend .main__quienes-texto;
     }
 
-    
+    &__elegirnos-contenedor {
+        @include grid(1, 0);
+    }
+
     &__elegirnos-img {
         height: 100%;
     }
@@ -54,6 +59,10 @@
 
     }
 
+    &__propuesta-texto {
+        @extend .main__quienes-texto;
+    }
+
     &__propuesta {
         background-color: $colorCinco;
         margin-bottom: 2rem;
@@ -61,6 +70,7 @@
 
     .card-text {
         padding: 0 1.7rem;
+        font-size: 1.7rem;
     }
 
 
@@ -77,11 +87,18 @@
     
     &__noti-titulo {
         margin-bottom: 1rem;
+        font-size: 2.8rem;
     }
 
     &__noti-nombre {
         padding: 1rem;
+        font-size: 2.6rem;
     }
+
+    &__noti-p {
+        font-size: 1.7rem;
+    }
+
 
     &__noticia {
         @include flex(column, unset, center);

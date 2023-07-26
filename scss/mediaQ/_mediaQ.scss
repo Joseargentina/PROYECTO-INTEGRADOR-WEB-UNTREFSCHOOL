@@ -6,14 +6,14 @@
     .header {
 
         &__titulo {
-            font-size: 3rem;
+            font-size: 3.3rem;
         }
 
         &__navbar {
-            right: 1.5rem;
 
             .nav-item {
                 font-size: 2rem;
+                margin-bottom: 0;
             }
         }
 
@@ -23,6 +23,15 @@
     .main {
         //Quienes-Somos
 
+        &__quienes-titulo {
+            font-size: 3rem;
+        }
+
+        &__quienes-texto p {
+            font-size: 2rem;
+            padding: 0;
+        }
+
         &__quienes-contenedor {
             @include grid(2, 2rem);
             grid-template-rows: 40rem;
@@ -30,6 +39,7 @@
         }
         &__quienes-img {
             height: 100%;
+            border-radius: 5px;
         }
 
         &__quienes-texto {
@@ -38,6 +48,15 @@
         }
 
         //Porque Elegirnos
+
+        &__elegirnos-titulo {
+            font-size: 3rem;
+        }
+
+        &__elegirnos-texto p {
+            font-size: 2rem;
+            padding: 0;
+        }
 
         &__elegirnos-contenedor {
             @include grid(2, 2rem);
@@ -53,15 +72,21 @@
         }
         &__elegirnos-img {
             height: 100%;
+            border-radius: 5px;
         }
 
         &__elegirnos-texto {
             grid-column: grid-1;
             grid-row: grid-1;
-            overflow: hidden
+            overflow: hidden;
+            padding: 0;
         }
 
         //Propuesta Educativa
+
+        &__propuesta-titulo {
+            font-size: 3rem;
+        }
 
         &__propuestas-contenedor {
             @include grid(2, 2rem);
@@ -73,6 +98,28 @@
         }
         .card {
             border: 1px solid #ccc !important;
+        }
+        .card-text {
+            font-size: 2rem;
+            padding: 0;
+        }
+
+        &__propuesta-img {
+            height: 40rem;
+        }
+
+        //Ultimas Noticias
+
+        &__noti-titulo {
+            font-size: 3rem;
+        }
+
+        &__noti-nombre {
+            font-size: 2.8rem;
+        }
+
+        &__noti-p {
+            font-size: 2rem;
         }
     }
 
@@ -106,6 +153,7 @@
 
         &__redes-titulo {
             margin: 1rem auto 0 auto;
+            font-size: 3rem;
         }
 
         &__facebook, &__twitter {
@@ -119,7 +167,7 @@
         }
 
         &__nombres {
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
 
         &__lista {
@@ -199,16 +247,16 @@
         background-color: $colorTres;
         
         &__contenido {
-            width: 75%;
+            width: 80%;
             max-width: 90%;
-            margin: 0 auto;
+            margin: 0 auto 2rem auto !important;
         }
 
 
         &__titulo {
             text-align: center;
             margin: 2rem auto;
-            font-size: 2.8rem;
+            font-size: 2.9rem;
             color: $colorCinco;
         }
 
@@ -219,7 +267,7 @@
         }
 
         &__form {
-            padding: 3rem;
+            padding: 0;
         }
 
         &__label {
@@ -243,7 +291,8 @@
         &__boton-form {
             font-size: 2rem;
             padding: 1rem;
-            margin-top: 1rem;
+            margin-top: 2.8rem;
+            width: 35%;
         }
 
         
@@ -259,22 +308,27 @@
         //Nav
 
         &__titulo {
-            font-size: 3.5rem;
+            font-size: 3.4rem;
             padding: 0.5rem 0 0.5rem 1rem;
         }
 
         &__navbar {
 
-            position: inherit;
+            
+            right: 0;
             
 
             .nav-item {
                 margin-bottom: 0;
+
+                .nav-link {
+                    padding: 0.5rem 0;
+                }
             }
         }
 
         .nav-link {
-            font-size: 2.4rem;
+            font-size: 2.2rem;
             
         }
 
@@ -304,11 +358,35 @@
             font-size: 4rem;
         }
 
+        &__quienes-texto p {
+            font-size: 1.8rem;
+        }
+
 
         //Seccion Porque elegirnos
 
+        &__elegirnos-titulo {
+            font-size: 4rem;
+        }
+
+        &__elegirnos-texto p {
+            font-size: 1.8rem;
+        }
+
 
         //Seccion Propuestas
+
+        &__propuesta-titulo {
+            font-size: 4rem;
+        }
+
+        .card-text {
+            font-size: 2.4rem;
+        }
+
+        &__propuesta-img {
+            height: 50rem;
+        }
 
 
         //Ultimas Noticias
@@ -325,5 +403,25 @@
         //Seccion Ubicacion
 
         //Seccion Contacto
+    }
+
+    //Formulario
+
+    .formulario {
+
+        &__correo {
+            margin-bottom: 1rem !important;
+        }
+
+        &__textarea {
+            height: 15rem !important;
+            max-height: 20rem !important;
+        }
+
+        &__boton-form {
+            font-size: 2.3rem;
+            padding: 1rem;
+            width: 30%;
+        }
     }
 }
