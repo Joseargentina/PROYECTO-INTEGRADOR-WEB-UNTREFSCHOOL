@@ -380,12 +380,16 @@
             font-size: 4rem;
         }
 
+        &__propuestas-contenedor {
+            @include grid(4, 2rem);
+        }
+
         .card-text {
-            font-size: 2.4rem;
+            font-size: 1.9rem;
         }
 
         &__propuesta-img {
-            height: 50rem;
+            height: 30rem;
         }
 
 
@@ -403,6 +407,13 @@
         //Seccion Ubicacion
 
         //Seccion Contacto
+
+        //copyright
+
+        &__copyright {
+            margin-top: 6rem;
+            font-size: 2.5rem;
+        }
     }
 
     //Formulario

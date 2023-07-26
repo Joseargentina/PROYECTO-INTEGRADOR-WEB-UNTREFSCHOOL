@@ -607,11 +607,20 @@ p {
   .main__propuesta-titulo {
     font-size: 4rem;
   }
+  .main__propuestas-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
   .main .card-text {
-    font-size: 2.4rem;
+    font-size: 1.9rem;
   }
   .main__propuesta-img {
-    height: 50rem;
+    height: 30rem;
+  }
+  .footer__copyright {
+    margin-top: 6rem;
+    font-size: 2.5rem;
   }
   .formulario__correo {
     margin-bottom: 1rem !important;
