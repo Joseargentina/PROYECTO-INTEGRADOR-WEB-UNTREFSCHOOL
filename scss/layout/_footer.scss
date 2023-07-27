@@ -13,6 +13,8 @@
         padding: 1rem;
         font-size: 2.6rem;
         margin: 1rem auto;
+        color: $colorTres;
+        font-weight: $fontMedia;
     }
 
     &__lista {
@@ -24,6 +26,7 @@
 
     &__nombres {
         font-size: 1.9rem;
+        color: $colorDos;
     }
 
     &__facebook, &__twitter {
@@ -85,12 +88,14 @@
         a {
             font-size: 1.8rem;
             font-family:  $fuentePrincipal;
+            color: $colorDos;
         }
     }
 
     &__copyright {
         font-family: $fuenteSecundaria;
         font-size: 1.8rem;
+        color: $colorCuatro;
     }
 
 

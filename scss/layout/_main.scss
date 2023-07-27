@@ -10,11 +10,12 @@
         margin-bottom: 1rem;
         font-size: 2.8rem;
         padding: 1rem !important;
+        color: $colorTres !important;
+        font-weight: $fontMedia;
     }
 
     &__quienes-texto p {
         font-size: 1.7rem;
-        padding: 0 1.7rem;
     }
 
     &__quienes-contenedor {
@@ -32,6 +33,7 @@
 
     &__span {
         font-weight: $fontMedia;
+        color: $colorDos;
     }
 
     //porque-elegirnos
@@ -56,7 +58,6 @@
 
     &__propuesta-titulo {
         @extend .main__quienes-titulo;
-
     }
 
     &__propuesta-texto {
@@ -69,10 +70,12 @@
     }
 
     .card-text {
-        padding: 0 1.7rem;
         font-size: 1.7rem;
     }
 
+    .card-title {
+        color: $colorDos;
+    }
 
     .row > * {
         padding: 0;
@@ -86,11 +89,14 @@
 
     
     &__noti-titulo {
+        color: $colorTres;
         margin-bottom: 1rem;
         font-size: 2.8rem;
+        font-weight: $fontMedia;
     }
 
     &__noti-nombre {
+        color: $colorDos;
         padding: 1rem;
         font-size: 2.6rem;
     }

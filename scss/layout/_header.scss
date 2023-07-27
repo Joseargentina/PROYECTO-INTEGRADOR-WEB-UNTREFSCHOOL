@@ -12,7 +12,7 @@
         transition: .3s;
     }
     &__titulo:hover {
-        color: $colorDos;
+        color: $colorUno;
     }
 
     &__nav {
@@ -41,7 +41,11 @@
     .nav-link:hover {
         color: $colorUno;
     }
+    .navbar-toggler:focus {
+        box-shadow: unset;
+    }
 
+    //Hero
 
     &__hero {
         @include bg-img('../assets/img/instituto.jpg', cover);
@@ -50,13 +54,13 @@
         height: 35rem;
         @include flex(column, end, center);
 
-        h1 {
+        a {
             font-size: 4rem;
             color: $colorCinco;
             transition: .3s;
-            font-weight: $fontMedia;
+            font-weight: $fontNormal;
         }
-        h1:hover {
+        a:hover {
             color: $colorTres;
         }
 

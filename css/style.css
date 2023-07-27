@@ -71,7 +71,7 @@ a {
 }
 
 p {
-  color: #000;
+  color: #181823;
   font-size: 1.6rem;
   line-height: 1.8;
   font-family: "Poppins", sans-serif;
@@ -86,7 +86,7 @@ p {
   transition: 0.3s;
 }
 .header__titulo:hover {
-  color: #1F8A70;
+  color: #FC7300;
 }
 .header__nav {
   background-color: #181823 !important;
@@ -110,6 +110,9 @@ p {
 .header .nav-link:hover {
   color: #FC7300;
 }
+.header .navbar-toggler:focus {
+  box-shadow: unset;
+}
 .header__hero {
   background-image: url("../assets/img/instituto.jpg");
   background-size: cover;
@@ -123,13 +126,13 @@ p {
   justify-content: end;
   align-items: center;
 }
-.header__hero h1 {
+.header__hero a {
   font-size: 4rem;
   color: #EFF5F5;
   transition: 0.3s;
-  font-weight: 600;
+  font-weight: 400;
 }
-.header__hero h1:hover {
+.header__hero a:hover {
   color: #00425A;
 }
 .header__hero p {
@@ -143,10 +146,11 @@ p {
   margin-bottom: 1rem;
   font-size: 2.8rem;
   padding: 1rem !important;
+  color: #00425A !important;
+  font-weight: 600;
 }
 .main__quienes-texto p, .main__propuesta-texto p, .main__elegirnos-texto p {
   font-size: 1.7rem;
-  padding: 0 1.7rem;
 }
 .main__quienes-contenedor {
   display: grid;
@@ -162,6 +166,7 @@ p {
 }
 .main__span {
   font-weight: 600;
+  color: #1F8A70;
 }
 .main__elegirnos-contenedor {
   display: grid;
@@ -176,8 +181,10 @@ p {
   margin-bottom: 2rem;
 }
 .main .card-text {
-  padding: 0 1.7rem;
   font-size: 1.7rem;
+}
+.main .card-title {
+  color: #1F8A70;
 }
 .main .row > * {
   padding: 0;
@@ -186,10 +193,13 @@ p {
   height: 25rem;
 }
 .main__noti-titulo {
+  color: #00425A;
   margin-bottom: 1rem;
   font-size: 2.8rem;
+  font-weight: 600;
 }
 .main__noti-nombre {
+  color: #1F8A70;
   padding: 1rem;
   font-size: 2.6rem;
 }
@@ -212,6 +222,8 @@ p {
   padding: 1rem;
   font-size: 2.6rem;
   margin: 1rem auto;
+  color: #00425A;
+  font-weight: 600;
 }
 .footer__lista {
   display: flex;
@@ -224,6 +236,7 @@ p {
 }
 .footer__nombres {
   font-size: 1.9rem;
+  color: #1F8A70;
 }
 .footer__facebook, .footer__twitter {
   font-size: 3.2rem;
@@ -263,10 +276,12 @@ p {
 .footer__nav a {
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
+  color: #1F8A70;
 }
 .footer__copyright {
   font-family: "Belanosima", sans-serif;
   font-size: 1.8rem;
+  color: #181823;
 }
 
 .formulario {
@@ -310,7 +325,7 @@ p {
   width: 40%;
   max-width: 60%;
   padding: 0.4rem !important;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
@@ -318,7 +333,7 @@ p {
   color: #EFF5F5;
 }
 .formulario__boton-form:hover {
-  color: #181823;
+  color: #FC7300;
 }
 .formulario .form-control {
   font-size: 1.4rem;
@@ -331,6 +346,17 @@ p {
   .header__navbar .nav-item {
     font-size: 2rem;
     margin-bottom: 0;
+  }
+  .header__hero {
+    height: 35rem;
+    background-size: 100% 188%;
+    background-position: 0 47%;
+  }
+  .header__hero a {
+    font-size: 5rem;
+  }
+  .header__hero p {
+    font-size: 2.5rem;
   }
   .main__quienes-titulo, .main__elegirnos-titulo, .main__propuesta-titulo {
     font-size: 3rem;
@@ -399,12 +425,19 @@ p {
   .main .card {
     border: 1px solid #ccc !important;
   }
+  .main .card-title {
+    color: #181823;
+    transition: 0.3s;
+  }
+  .main .card-title:hover {
+    color: #FC7300 !important;
+  }
   .main .card-text {
     font-size: 2rem;
     padding: 0;
   }
   .main__propuesta-img {
-    height: 40rem;
+    height: 30rem;
   }
   .main__noti-titulo {
     font-size: 3rem;
@@ -512,7 +545,7 @@ p {
     padding: 1rem;
   }
   .footer__copyright {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     font-size: 2.2rem;
   }
   .formulario {
@@ -586,7 +619,7 @@ p {
     background-size: 100% 188%;
     background-position: 0 47%;
   }
-  .header__hero h1 {
+  .header__hero a {
     font-size: 6rem;
   }
   .header__hero p {
@@ -610,7 +643,7 @@ p {
   .main__propuestas-contenedor {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1rem;
   }
   .main .card-text {
     font-size: 1.9rem;
