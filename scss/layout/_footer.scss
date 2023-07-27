@@ -26,7 +26,7 @@
 
     &__nombres {
         font-size: 1.9rem;
-        color: $colorDos;
+        color: $colorCuatro;
     }
 
     &__facebook, &__twitter {
@@ -60,7 +60,7 @@
     //contacto
 
     &__contacto {
-        @extend .footer__redes;
+        margin-bottom: 2rem;
     }
 
     &__contacto-titulo {
@@ -79,6 +79,7 @@
 
     &__nav {
         @include flex(column, center, center);
+        margin-bottom: 0;
         
 
         li {
@@ -88,7 +89,7 @@
         a {
             font-size: 1.8rem;
             font-family:  $fuentePrincipal;
-            color: $colorDos;
+            color: $colorCuatro;
         }
     }
 
