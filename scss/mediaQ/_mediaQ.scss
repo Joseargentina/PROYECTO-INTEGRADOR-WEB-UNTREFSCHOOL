@@ -168,7 +168,7 @@
 
     .footer {
 
-        max-width: 90%;
+        max-width: 100%;
         margin: 1.5rem auto 0 auto;
 
         &__contenedor {
@@ -283,7 +283,7 @@
         //copyright
 
         &__copyright {
-            margin-top: 5rem;
+            margin-top: 4rem;
             font-size: 2.2rem;
         }
     }
@@ -291,7 +291,7 @@
     //Formulario
 
     .formulario {
-        max-width: 90%;
+        max-width: 85%;
         margin: 5rem auto 3rem auto;
         border-radius: 5px;
         background-color: $colorTres;
@@ -306,14 +306,16 @@
         &__titulo {
             text-align: center;
             margin: 2rem auto;
-            font-size: 2.9rem;
+            font-size: 3rem;
             color: $colorCinco;
         }
 
         &__subtitulo {
             text-align: center;
-            margin: 0 auto 2rem auto;
+            margin: 0 auto 2.5rem auto;
             color: $colorUno;
+            font-size: 1.8rem;
+            width: 52%;
         }
 
         &__form {
@@ -408,9 +410,14 @@
             font-size: 4rem;
         }
 
-        &__quienes-texto p {
-            font-size: 1.8rem;
+        &__quienes-texto {
+            overflow: hidden;
+
+            p {
+                font-size: 2rem;
+            }
         }
+
 
 
         //Seccion Porque elegirnos
@@ -419,8 +426,11 @@
             font-size: 4rem;
         }
 
-        &__elegirnos-texto p {
-            font-size: 1.8rem;
+        &__elegirnos-texto {
+
+            p {
+                font-size: 2rem;
+            }
         }
 
 
@@ -434,6 +444,18 @@
             @include grid(4, 1rem);
         }
 
+        &__propuesta {
+            overflow:hidden;
+            display: inline-block;
+            height: 66rem;
+            
+        }
+
+        .card-title {
+            font-size: 3rem;
+            
+        }
+
         .card-text {
             font-size: 1.9rem;
         }
@@ -445,23 +467,46 @@
 
         //Ultimas Noticias
 
-        
+        &__noti-titulo {
+            font-size: 4rem;
+        }
     }
 
     //Footer
 
     .footer {
 
+        margin: 4rem auto 0 auto;
+
         //Seccion Redes
+
+        &__redes-titulo {
+            font-size: 4rem;
+        }
+
+        &__nombres {
+            font-size: 2.5rem;
+        }
 
         //Seccion Ubicacion
 
+        &__iframe {
+            width: 32rem;
+            height: 21rem;
+        }
+
         //Seccion Contacto
+
+        &__nav {
+            a {
+                font-size: 2.5rem;
+            }
+        }
 
         //copyright
 
         &__copyright {
-            margin-top: 8rem;
+            margin-top: 6rem;
             font-size: 2.5rem;
         }
     }
@@ -469,6 +514,8 @@
     //Formulario
 
     .formulario {
+
+        max-width: 65%;
 
         &__correo {
             margin-bottom: 1rem !important;

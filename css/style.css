@@ -297,17 +297,18 @@ p {
   padding: 1rem !important;
   max-width: 100%;
 }
-.formulario__titulo {
-  font-size: 2.3rem;
+.formulario__titulo, .formulario__subtitulo {
+  font-size: 2.8rem;
   margin: 1rem auto;
   text-align: center;
-  color: #181823;
+  color: #00425A;
+  text-shadow: 1px 2px 5px #181823;
 }
 .formulario__subtitulo {
-  text-align: center;
-  color: #181823;
   margin: 1rem auto 2rem auto;
-  width: 93%;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-shadow: none;
 }
 .formulario__form {
   padding: 1rem;
@@ -475,7 +476,7 @@ p {
     font-size: 2rem;
   }
   .footer {
-    max-width: 90%;
+    max-width: 100%;
     margin: 1.5rem auto 0 auto;
   }
   .footer__contenedor {
@@ -576,11 +577,11 @@ p {
     align-items: center;
   }
   .footer__copyright {
-    margin-top: 5rem;
+    margin-top: 4rem;
     font-size: 2.2rem;
   }
   .formulario {
-    max-width: 90%;
+    max-width: 85%;
     margin: 5rem auto 3rem auto;
     border-radius: 5px;
     background-color: #00425A;
@@ -590,16 +591,18 @@ p {
     max-width: 90%;
     margin: 0 auto 2rem auto !important;
   }
-  .formulario__titulo {
+  .formulario__titulo, .formulario__subtitulo {
     text-align: center;
     margin: 2rem auto;
-    font-size: 2.9rem;
+    font-size: 3rem;
     color: #EFF5F5;
   }
   .formulario__subtitulo {
     text-align: center;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 2.5rem auto;
     color: #FC7300;
+    font-size: 1.8rem;
+    width: 52%;
   }
   .formulario__form {
     padding: 0;
@@ -659,14 +662,17 @@ p {
   .main__quienes-titulo, .main__elegirnos-titulo, .main__propuesta-titulo {
     font-size: 4rem;
   }
+  .main__quienes-texto, .main__elegirnos-texto, .main__propuesta-texto {
+    overflow: hidden;
+  }
   .main__quienes-texto p, .main__elegirnos-texto p, .main__propuesta-texto p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .main__elegirnos-titulo {
     font-size: 4rem;
   }
   .main__elegirnos-texto p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .main__propuesta-titulo {
     font-size: 4rem;
@@ -676,15 +682,45 @@ p {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
+  .main__propuesta {
+    overflow: hidden;
+    display: inline-block;
+    height: 66rem;
+  }
+  .main .card-title {
+    font-size: 3rem;
+  }
   .main .card-text {
     font-size: 1.9rem;
   }
   .main__propuesta-img {
     height: 30rem;
   }
-  .footer__copyright {
-    margin-top: 8rem;
+  .main__noti-titulo {
+    font-size: 4rem;
+  }
+  .footer {
+    margin: 4rem auto 0 auto;
+  }
+  .footer__redes-titulo, .footer__ubicacion-titulo, .footer__contacto-titulo, .footer__titulo {
+    font-size: 4rem;
+  }
+  .footer__nombres {
     font-size: 2.5rem;
+  }
+  .footer__iframe {
+    width: 32rem;
+    height: 21rem;
+  }
+  .footer__nav a {
+    font-size: 2.5rem;
+  }
+  .footer__copyright {
+    margin-top: 6rem;
+    font-size: 2.5rem;
+  }
+  .formulario {
+    max-width: 65%;
   }
   .formulario__correo {
     margin-bottom: 1rem !important;
