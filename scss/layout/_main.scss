@@ -76,6 +76,13 @@
 
     .card-title {
         color: $colorDos;
+        font-size: 2.7rem;
+        transition: .3s;
+    }
+
+    .card-title:hover{
+        color: $colorUno !important;
+        cursor: pointer;
     }
 
     .row > * {
@@ -100,6 +107,11 @@
         color: $colorDos;
         padding: 1rem;
         font-size: 2.6rem;
+        transition: color .3s;
+    }
+
+    &__noti-nombre:hover {
+        color: $colorUno;
     }
 
     &__noti-p {
