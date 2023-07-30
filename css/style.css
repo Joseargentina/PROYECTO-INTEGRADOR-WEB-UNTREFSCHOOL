@@ -661,10 +661,10 @@ p {
     background-position: 0 47%;
   }
   .header__hero a {
-    font-size: 6rem;
+    font-size: 8.5rem;
   }
   .header__hero p {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .main__quienes-titulo, .main__elegirnos-titulo, .main__propuesta-titulo {
     font-size: 4rem;
@@ -735,7 +735,7 @@ p {
     align-items: center;
   }
   .main .card-body:hover {
-    background-color: #00425A;
+    background-color: #181823;
   }
   .main .card-title {
     font-size: 3.3rem;
