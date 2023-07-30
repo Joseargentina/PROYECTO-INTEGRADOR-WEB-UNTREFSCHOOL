@@ -478,6 +478,7 @@
 
         .card-body {
             background-color: $colorCinco;
+            padding: 1.5rem !important;
             color: $colorDos;
             transition: background-color .3s;
             @include flex(row, center, center);

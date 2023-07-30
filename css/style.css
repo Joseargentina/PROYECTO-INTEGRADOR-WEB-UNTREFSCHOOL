@@ -727,6 +727,7 @@ p {
   }
   .main .card-body {
     background-color: #EFF5F5;
+    padding: 1.5rem !important;
     color: #1F8A70;
     transition: background-color 0.3s;
     display: flex;
