@@ -35,6 +35,7 @@
 
     &__label {
         color: $colorCuatro;
+        font-size: 1.7rem;
     }
 
     &__label--mod {
@@ -58,12 +59,19 @@
         font-size: 1.7rem;
         font-weight: $fontMedia;
         font-family: $fuentePrincipal;
+        font-size: 1.9rem;
         box-shadow: $boxShadow;
         margin: 2rem auto;
         color: $colorCinco;
+        background-color: $colorCuatro;
+        border-color: $colorCuatro;
+        border-radius: 5px;
     }
     &__boton-form:hover {
         color: $colorUno;
+    }
+    &__boton-form:focus {
+        color: $colorDos;
     }
     
     .form-control {

@@ -287,7 +287,7 @@
     //Formulario
 
     .formulario {
-        max-width: 85%;
+        max-width: 80%;
         margin: 5rem auto 3rem auto;
         border-radius: 5px;
         background-color: $colorTres;
@@ -320,6 +320,7 @@
 
         &__label {
             color: $colorCinco;
+            font-size: 2rem;
         }
 
         &__label--mod {
@@ -337,13 +338,11 @@
         }
 
         &__boton-form {
-            font-size: 2rem;
+            font-size: 2.2rem;
             padding: 1rem;
             margin-top: 2.8rem;
             width: 35%;
         }
-
-        
     }
 
 }
@@ -434,7 +433,7 @@
 
         &__elegirnos-contenedor {
             @include grid(6, 0);
-            grid-template-rows: 40rem;
+            grid-template-rows: 42rem;
         }
 
         &__elegirnos-imagen {
@@ -557,8 +556,20 @@
 
         max-width: 65%;
 
+        &__titulo {
+            font-size: 4rem;
+        }
+
+        &__subtitulo {
+            font-size: 2rem;
+        }
+
         &__correo {
             margin-bottom: 1rem !important;
+        }
+
+        &__label {
+            font-size: 2.3rem;
         }
 
         &__textarea {
@@ -567,7 +578,7 @@
         }
 
         &__boton-form {
-            font-size: 2.3rem;
+            font-size: 2.8rem;
             padding: 1rem;
             width: 30%;
         }
