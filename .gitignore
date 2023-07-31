@@ -1,10 +1,3 @@
-#ignorar archivos
-*.css
-*.text
-pruebaestilos.css
-
-#ignorar carpeta nodemodules
 node_modules/
 
-#ignorar un archivo de mac
-.DS_Store
+.vscode
