@@ -188,6 +188,7 @@ p {
   color: #1F8A70;
   font-size: 2.7rem;
   transition: 0.3s;
+  white-space: nowrap;
 }
 .main .card-title:hover {
   color: #FC7300 !important;
